@@ -68,7 +68,7 @@ struct FileController: RouteCollection {
             let chunk = [UInt8](repeating: 0xAB, count: chunkSize)
 
             // helper: write Data → EventLoopFuture<Void>
-            func write(_ data: [UInt8]) -> EventLoopFuture<Void> {
+            @Sendable func write(_ data: [UInt8]) -> EventLoopFuture<Void> {
                 var buffer = ByteBufferAllocator().buffer(capacity: data.count)
                 buffer.writeBytes(data)
                 return writer.write(.buffer(buffer))

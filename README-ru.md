@@ -195,3 +195,7 @@ MIT License - подробности в файле LICENSE
 ## Автор
 
 Создано SpaceZeroLab
+
+## ☕ Buy me a coffee
+
+Если проект вам полезен, вы можете [поддержать мою работу на Boosty](https://boosty.to/andreytorlopov).
